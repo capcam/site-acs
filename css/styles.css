@@ -1,0 +1,92 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Open+Sans&display=swap');
+
+body {
+  background-color: white;
+  color: #2e008b;
+  font-family: "Open Sans", sans-serif;
+  padding:  100px 15% 100px 15%;        /* Fixed top/bottom for head/foot, relative sides */
+}
+
+nav {
+   background-color: #2e008b;           /* ACED Branding Dark Blue */
+   color: white;
+   position: fixed;                     /* Pin navbar to top of page */
+   width: 100%;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: space-between;      /* Separate title and nav links */
+ }
+
+nav header {
+  padding-left: 15%;                    /* Match body padding */
+}
+
+#nav-header {                           /* Format navbar title TODO rename unambiguously */
+  color: white;
+  text-decoration: none;
+}
+
+#nav-link-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15%;                   /* Match body padding */
+}
+
+ .nav-link {
+   color: white;
+   text-decoration: none;
+   padding: 15px 0px 15px 30px;         /* Make rightmost link align with body */
+ }
+
+ h1 {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+ }
+
+ p {
+   text-align: justify;
+   text-justify: inter-word;
+ }
+
+
+/* Natural breakpoint 1: When navbar title and links collide */
+
+ @media (max-width: 800px) {
+   nav {
+     flex-direction: column;    /* navbar title above links flexbox */
+     align-items: center;
+   }
+
+  nav header {
+     padding-left: 0;           /* remove now-superflous padding */
+   }
+
+  nav header h1 {
+    margin: 5px 0 0 0 ;         /* adjust padding to maintain navbar height */
+  }
+
+  #nav-link-list {
+    padding: 6px;               /* adjust padding to maintain navbar height */
+  }
+
+  .nav-link {
+    padding: 15px;              /* make padding uniform to align centrally */
+  }
+}
+
+/* Natural breakpoint 2: When page is too narrow for link flexbox */
+
+@media (max-width: 460px) {
+
+  #nav-link-list {
+    flex-direction: column;     /* stack links on top of each other */
+  }
+
+  body {
+    padding-top: 162px;         /* increase padding to accommodate stack */
+  }
+}
