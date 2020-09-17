@@ -1,13 +1,19 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Open+Sans&display=swap');
 
+/* Reset: Remove default margin */
+body, ul {
+  margin: 0;
+}
+
+/* Body defaults */
 body {
   background-color: white;
   color: #2e008b;
   font-family: "Open Sans", sans-serif;
-  padding:  100px 15% 100px 15%;        /* Fixed top/bottom for head/foot, relative sides */
 }
 
+/* Navbar */
 nav {
    background-color: #2e008b;           /* ACED Branding Dark Blue */
    color: white;
@@ -28,6 +34,10 @@ nav header {
   text-decoration: none;
 }
 
+#nav-header:hover {                     /* Format navbar title TODO rename unambiguously */
+  color: #00b6ed;
+}
+
 #nav-link-list {
   list-style-type: none;
   display: flex;
@@ -36,26 +46,88 @@ nav header {
   padding-right: 15%;                   /* Match body padding */
 }
 
- .nav-link {
-   color: white;
-   text-decoration: none;
-   padding: 15px 0px 15px 30px;         /* Make rightmost link align with body */
- }
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 15px 0px 15px 30px;         /* Make rightmost link align with body */
+}
 
- h1 {
+/* Main and key content elements */
+
+main {
+  padding:  80px 15% 60px 15%;        /* Fixed top for header, relative edges */
+}
+
+h1 {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 300;
+  }
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  }
+
+a:hover {
+  color: #00b6ed;
+}
+
+.picture {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#logo-narrow {
+  display: none;
+}
+
+ /* Footer */
+
+ footer {
+   color: white;
+   background-color: #00b6ed;
+   padding:  0 15% 0 15%;
+   display: flex;
+   justify-content: space-between;
  }
 
- p {
-   text-align: justify;
-   text-justify: inter-word;
+ footer a {
+   text-decoration: none;
+   color: white;
  }
 
+ footer a:hover {
+   color: #2e008b;
+ }
+
+ /* Flexbox-based sticky footer (https://www.developerdrive.com/sticky-footer-with-flexbox/)*/
+ body {
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+ }
+ .content {
+     flex: 1;
+ }
+ footer {
+     flex-shrink: 0;
+ }
 
 /* Natural breakpoint 1: When navbar title and links collide */
 
  @media (max-width: 800px) {
+   main {
+     padding:  80px 10% 40px 10%;        /* Fixed top/bottom for head/foot, relative sides */
+   }
+
    nav {
      flex-direction: column;    /* navbar title above links flexbox */
      align-items: center;
@@ -76,17 +148,22 @@ nav header {
   .nav-link {
     padding: 15px;              /* make padding uniform to align centrally */
   }
+
 }
 
 /* Natural breakpoint 2: When page is too narrow for link flexbox */
 
 @media (max-width: 460px) {
-
-  #nav-link-list {
-    flex-direction: column;     /* stack links on top of each other */
+  .nav-link {
+    padding: 5px;              /* reduce padding to condense menu */
   }
 
-  body {
-    padding-top: 162px;         /* increase padding to accommodate stack */
+  #logo-wide {
+    display: none;
   }
+
+  #logo-narrow {
+    display: block;
+  }
+
 }
