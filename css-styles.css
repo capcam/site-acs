@@ -35,6 +35,12 @@ nav header {
   padding-left: 15%;                    /* Match body padding */
 }
 
+#nav-logo {
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+
 #nav-header {                           /* Format navbar title TODO rename unambiguously */
   color: white;
   text-decoration: none;
@@ -129,9 +135,9 @@ a:hover {
 
 /* Natural breakpoint 1: When navbar title and links collide */
 
- @media (max-width: 800px) {
+ @media (max-width: 1020px) {
    main {
-     padding:  80px 10% 40px 10%;        /* Fixed top/bottom for head/foot, relative sides */
+     padding:  100px 10% 40px 10%;        /* Fixed top/bottom for head/foot, relative sides */
    }
 
    nav {
