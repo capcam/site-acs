@@ -6,6 +6,12 @@ body, ul {
   margin: 0;
 }
 
+/* Reset: Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
 /* Body defaults */
 body {
   background-color: white;
