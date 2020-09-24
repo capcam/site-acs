@@ -75,10 +75,19 @@ h1 {
   font-weight: 300;
   }
 
+#index-subtitle {
+  font-size: 20px;
+}
+
 p {
   text-align: justify;
   text-justify: inter-word;
   }
+
+a {
+  text-decoration: none;
+  color: #00b6ed;
+}
 
 a:hover {
   color: #00b6ed;
