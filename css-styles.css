@@ -89,22 +89,17 @@ a:hover {
   color: #00b6ed;
 }
 
-.picture {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.responsive-image {
+.responsive-image {         /* Responsive images inside flexbox containers  */
   max-width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+#aced-cohort-logo-index {
 
 }
 
-#logo-narrow {
-  display: none;
-}
 
  /* Footer */
 
@@ -138,9 +133,74 @@ a:hover {
      flex-shrink: 0;
  }
 
-/* Natural breakpoint 1: When navbar title and links collide */
+ /* Image formatting  */
 
- @media (max-width: 1020px) {
+ .picture {
+   text-align: center;
+   margin-top: 40px;
+ }
+
+ .picture-row {              /* Flexbox-based image row  */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .picture-col {
+   padding: 15px 0 15px 0;
+ }
+
+ #acc-logo-col {
+   padding: 0 5% 0 5%;
+ }
+
+ #acc-logo-narrow {
+   display: none;
+ }
+
+ /* Natural breakpoint: When page title runs onto two lines */
+
+@media (max-width: 1170px) {
+
+  #index-title {
+    text-align: center;
+  }
+
+  .picture-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .picture-col {
+    padding: 15px;
+  }
+
+  #acc-logo-col {
+    max-width: 460px;
+    order: -1;
+  }
+
+  #cuh-logo-col {
+    max-width: 300px;
+  }
+
+  #nihr-logo-col {
+    max-width: 300px;
+  }
+
+
+}
+
+
+@media (max-width: 1015px) {
+  .nav-link {
+    padding: 15px 0px 15px 10px;       /* Reduce left padding */
+  }
+}
+
+/* Natural breakpoint: When navbar title and links collide */
+
+@media (max-width: 880px) {
    main {
      padding:  100px 10% 40px 10%;        /* Fixed top/bottom for head/foot, relative sides */
    }
@@ -175,12 +235,13 @@ a:hover {
     padding: 5px;              /* reduce padding to condense menu */
   }
 
-  #logo-wide {
+  #acc-logo-wide {
     display: none;
   }
 
-  #logo-narrow {
+  #acc-logo-narrow {
     display: block;
+    max-width: 250px;
   }
 
 }
