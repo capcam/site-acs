@@ -100,6 +100,40 @@ a:hover {
 
 }
 
+ /* HTML "details" collapsibles */
+
+.faq-details > summary {
+   padding: 5px 15px;
+   width: max-content;
+   background-color: #ccf3ff; /* ACED light blue HSL mod from L=46 to 90%*/
+   /*border: none;*/
+   box-shadow: 3px 3px 4px #2e008b;
+   cursor: pointer;
+ }
+
+.faq-details > p {
+   background-color: #ccf3ff;
+   padding: 5px 15px;
+   margin: 0;
+   box-shadow: 3px 3px 4px #2e008b;
+ }
+
+ .about-details > summary {
+   font-size: large;
+   width: max-content;
+   cursor: pointer;
+   padding: 10px 0px;
+  }
+
+  .about-details > summary:hover {
+     color: #00b6ed;
+   }
+
+ .about-details > p {
+  }
+
+
+
 
  /* Footer */
 
