@@ -1,17 +1,6 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Open+Sans&display=swap');
 
-/* Reset: Remove default margin */
-body, ul {
-  margin: 0;
-}
-
-/* Reset: Remove default padding */
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
 /* Body defaults */
 body {
   background-color: white;
