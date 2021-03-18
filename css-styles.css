@@ -61,7 +61,7 @@ nav header {
 /* Main and key content elements */
 
 main {
-  padding:  80px 15% 60px 15%;        /* Fixed top for header, relative edges */
+  padding:  80px 15% 10px 15%;        /* Fixed top for header, relative edges */
 }
 
 h1 {
@@ -83,6 +83,10 @@ a:hover {
   color: #00b6ed;
 }
 
+.center-text {
+  text-align: center;
+}
+
 .responsive-image {         /* Responsive images inside flexbox containers  */
   max-width: 100%;
   height: auto;
@@ -92,6 +96,29 @@ a:hover {
 
 #aced-cohort-logo-index {
 
+}
+
+.joinbutton {
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 3;
+    color: white;
+    background-color: #00b6ed;
+    text-align: center;
+    border-radius: 10px;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+
+}
+
+.joinbutton:hover {
+  color: #2e008b;
 }
 
  /* HTML "details" collapsibles */
