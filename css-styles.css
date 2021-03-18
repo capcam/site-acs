@@ -18,6 +18,7 @@ nav {
    left: 0;
    display: flex;
    justify-content: space-between;      /* Separate title and nav links */
+   z-index: 999;                        /* Keep navbar on top of page content */
  }
 
 nav header {
