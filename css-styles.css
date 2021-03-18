@@ -54,6 +54,10 @@ nav header {
   padding: 15px 0px 15px 30px;         /* Make rightmost link align with body */
 }
 
+.nav-link-current {
+  color: #00b6ed;
+}
+
 /* Main and key content elements */
 
 main {
