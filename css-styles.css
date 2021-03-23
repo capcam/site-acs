@@ -153,8 +153,23 @@ a:hover {
  .about-details > p {
   }
 
+/* Responsive Map iFrame created using https://www.benmarshall.me/responsive-iframe-generator/ */
 
+  .iframe-container {
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 66.67%;
+    position: relative;
+  }
 
+  .iframe-container iframe {
+     border: 0;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+  }
 
  /* Footer */
 
