@@ -141,13 +141,14 @@ a:hover {
 
  .about-details > summary {
    font-size: large;
+   color: #00b6ed;
    width: auto;
    cursor: pointer;
    padding: 10px 0px;
   }
 
   .about-details > summary:hover {
-     color: #00b6ed;
+     color: #ec008c;
    }
 
  .about-details > p {
