@@ -121,6 +121,25 @@ a:hover {
   color: #2e008b;
 }
 
+ /* News Cards*/
+
+ .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 #2e008b;
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 6px 12px 0 #2e008b;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
  /* HTML "details" collapsibles */
 
 .faq-details > summary {
